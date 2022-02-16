@@ -35,10 +35,35 @@ console.log(rollDie());
 
 // console.log(evenNumbers);
 const oddNum = numbers.filter((number) => number % 2 === 0).sort((a, b) => a - b);
-
+console.log(oddNum);
 const test = numbers.reduce((a, b) => a + b);
 const test2 = numbers.reduce((a, b) => a * b);
 console.log(test);
 console.log(test2);
 const minimum = numbers.reduce((min, curr) => (min < curr ? min : curr));
 console.log(minimum);
+const person = {
+    first: 'Rajib',
+    last: 'Faysal',
+    full() {
+        return `${this.first} ${this.last}`;
+    },
+    shoutName() {
+        setTimeout(() => {
+            console.log(this);
+            console.log(this.full());
+        }, 2000);
+    },
+};
+
+// person.shoutName();
+
+console.log(person.full());
+
+const person2 = {
+    first: 'Rajib',
+    last: 'Faysal',
+    full: () => `${this.first} ${this.last}`, // Return undefined undefined : this is problem of arrow function
+};
+
+console.log(person2.full());
