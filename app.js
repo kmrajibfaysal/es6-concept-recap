@@ -24,7 +24,7 @@ console.log(firstNames);
 print(firstNames);
 
 const rollDie = () => Math.floor(Math.random() * 6) + 1;
-// console.log(rollDie());
+console.log(rollDie());
 
 // const isEven = (number) => number % 2 === 0;
 // // eslint-disable-next-line no-confusing-arrow
@@ -34,3 +34,11 @@ const rollDie = () => Math.floor(Math.random() * 6) + 1;
 // );
 
 // console.log(evenNumbers);
+const oddNum = numbers.filter((number) => number % 2 === 0).sort((a, b) => a - b);
+
+const test = numbers.reduce((a, b) => a + b);
+const test2 = numbers.reduce((a, b) => a * b);
+console.log(test);
+console.log(test2);
+const minimum = numbers.reduce((min, curr) => (min < curr ? min : curr));
+console.log(minimum);
