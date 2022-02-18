@@ -133,3 +133,13 @@ deathYear;
 ola;
 
 // Destructuring parameters 239no. udemy video;
+
+// Async Js
+
+// Call Stack // loupe website shows the same
+const multiply = (x, y) => x * y;
+const square = (x) => multiply(x, x);
+const isRightTriangle = (a, b, c) => square(a) + square(b) === square(c);
+// here function get called from the last one in to first one out which is called call stack
+
+console.log(isRightTriangle(3, 4, 5));
