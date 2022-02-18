@@ -22,5 +22,15 @@
   // tailwind settings
   "css.validate": false,
   "tailwindCSS.emmetCompletions": true,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "cSpell.words": [
+    "Albus",
+    "Gonagall",
+    "Hagrid",
+    "Hermione",
+    "Rubeus",
+    "Snape",
+    "toka",
+    "Weasley"
+  ]
 }

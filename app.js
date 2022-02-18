@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 function print(n) {
     console.log(n);
 }
@@ -84,3 +85,51 @@ function raceResults(gold, silver, ...others) {
 }
 
 raceResults('rajib', 'farin', 'faysal', 'ola', 'oka', 'toka');
+
+// Destructuring
+const scores = [22, 33, 43, 44, 121, 44, 535, 66, 4365, 3434, 44, 23, 23];
+
+const [gold, silver, bronze, ...everyoneElse] = scores;
+gold;
+silver;
+bronze;
+everyoneElse;
+
+// Destructuring from objects
+
+const user = {
+    email: 'harvey@gmail.com',
+    password: 'sCoTt1938jff',
+    firstName: 'Harvey',
+    lastName: 'Milk',
+    born: 1930,
+    died: 1978,
+    bio: 'Harvey Bernard Milk was an American politician and the first openly elected political leader.',
+    city: 'San Francisco',
+    state: 'CA',
+};
+
+// const firstName = user.firstName;
+// const lastName = user.lastName;
+// firstName;
+// lastName;
+
+// const { firstName } = user;
+// const { lastName } = user;
+// const { email } = user;
+
+const { firstName, lastName, email } = user; // this is much shorter than above;
+
+const { city } = user;
+firstName;
+lastName;
+email;
+city;
+
+const { born: birthYear, died: deathYear, ola = 'N/A' } = user; // demo of making new variable using that syntax
+// here ola is a default value;
+birthYear;
+deathYear;
+ola;
+
+// Destructuring parameters 239no. udemy video;
