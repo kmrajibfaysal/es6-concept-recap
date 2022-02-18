@@ -67,3 +67,20 @@ const person2 = {
 };
 
 console.log(person2.full());
+
+// spread operator
+// REST parameters
+// REST ...args contain all the arguments but work like array which is different than arguments
+function sumAll(...nums) {
+    return nums.reduce((total, el) => total + el);
+}
+console.log(sumAll(1, 2, 3, 4, 5, 6));
+
+// example
+function raceResults(gold, silver, ...others) {
+    console.log(`Gold medal goes to ${gold}`);
+    console.log(`Silver medal goes to ${silver}`);
+    console.log(`And thanks to everyone else: ${others}`);
+}
+
+raceResults('rajib', 'farin', 'faysal', 'ola', 'oka', 'toka');
