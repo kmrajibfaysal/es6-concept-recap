@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable no-unused-expressions */
 function print(n) {
     console.log(n);
@@ -145,5 +146,18 @@ const isRightTriangle = (a, b, c) => square(a) + square(b) === square(c);
 console.log(isRightTriangle(3, 4, 5));
 setTimeout(() => {
     console.log('working!');
-}, 10);
+}, 3000);
 console.log('ola');
+
+// Json
+const data =
+    '{"ticker":{"base":"BTC","target":"USD","price":"40282.58381530","volume":"9077.84614419","change":"32.63833294"},"timestamp":1645250344,"success":true,"error":""}';
+
+const parseData = (d) => JSON.parse(d);
+
+const newDataObject = parseData(data);
+console.log(newDataObject);
+
+const stringifyData = (d) => JSON.stringify(d);
+const newDataJson = stringifyData(data);
+console.log(newDataJson);
