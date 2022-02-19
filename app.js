@@ -143,3 +143,7 @@ const isRightTriangle = (a, b, c) => square(a) + square(b) === square(c);
 // here function get called from the last one in to first one out which is called call stack
 
 console.log(isRightTriangle(3, 4, 5));
+setTimeout(() => {
+    console.log('working!');
+}, 10);
+console.log('ola');
