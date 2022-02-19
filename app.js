@@ -137,9 +137,9 @@ ola;
 // Async Js
 
 // Call Stack // loupe website shows the same
-const multiply = (x, y) => x * y;
-const square = (x) => multiply(x, x);
-const isRightTriangle = (a, b, c) => square(a) + square(b) === square(c);
+// const multiply = (x, y) => x * y;
+// const square = (x) => multiply(x, x);
+// const isRightTriangle = (a, b, c) => square(a) + square(b) === square(c);
 // here function get called from the last one in to first one out which is called call stack
 
 // console.log(isRightTriangle(3, 4, 5));
@@ -200,6 +200,8 @@ const company = {
 const { work, framework } = company.web;
 const { food } = company.ceo;
 const { second, third, fourth } = company.web.tech;
+const { test1 } = company;
+console.log(test1); // undefined ; if property doesn't exist in object it will set to undefined
 
 console.log(work);
 console.log(framework);
@@ -207,3 +209,21 @@ console.log(food);
 console.log(second);
 console.log(third);
 console.log(fourth);
+
+// declare variable based on the name of an object property
+const arr = [1, 2, 3, 4, 5, 6];
+const [p, q, ...others] = arr;
+console.log(p, q);
+console.log(...others); // 3 4 5 6 this shows the values
+console.log(others); // [3,4,5,6] this shows the rest array!
+
+//  map practice
+const products = [
+    { name: 'water bottle', price: 50, color: 'yellow' },
+    { name: 'mobile phone', price: 15000, color: 'black' },
+    { name: 'smart watch', price: 3000, color: 'black' },
+    { name: 'sticky note', price: 30, color: 'pink' },
+];
+
+const productsName = products.map((product) => product.name);
+console.log(productsName);
