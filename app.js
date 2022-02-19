@@ -226,4 +226,12 @@ const products = [
 ];
 
 const productsName = products.map((product) => product.name);
+const productPrices = products.map((product) => product.price);
 console.log(productsName);
+console.log(productPrices);
+
+const filteredProducts = products.map((product) => product.price).filter((prices) => prices > 1000);
+console.log(filteredProducts);
+
+const pinkItem = products.find((product) => product.color === 'pink');
+console.log(pinkItem);
