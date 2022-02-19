@@ -57,7 +57,6 @@ const person = {
         }, 2000);
     },
 };
-
 // person.shoutName();
 
 console.log(person.full());
@@ -143,11 +142,11 @@ const square = (x) => multiply(x, x);
 const isRightTriangle = (a, b, c) => square(a) + square(b) === square(c);
 // here function get called from the last one in to first one out which is called call stack
 
-console.log(isRightTriangle(3, 4, 5));
-setTimeout(() => {
-    console.log('working!');
-}, 3000);
-console.log('ola');
+// console.log(isRightTriangle(3, 4, 5));
+// setTimeout(() => {
+//     console.log('working!');
+// }, 3000);
+// console.log('ola');
 
 // Json
 const data =
@@ -161,3 +160,50 @@ console.log(newDataObject);
 const stringifyData = (d) => JSON.stringify(d);
 const newDataJson = stringifyData(data);
 console.log(newDataJson);
+// destructuring practice
+const fish = {
+    id: 45,
+    userName: 'Hilsha',
+    price: 2000,
+    phone: '012221212',
+    address: 'chandpur',
+    color: 'grey',
+    origin: 'deshi',
+};
+const { phone } = fish;
+console.log(phone);
+
+const { id, userName, price } = fish;
+
+console.log(`${id}.${userName}: ${price}`);
+// more example
+const company = {
+    name: 'GP',
+    ceo: {
+        id: 1,
+        name: 'Faysal',
+        food: 'tometo',
+    },
+    web: {
+        work: 'website development',
+        employer: 22,
+        framework: 'React',
+        tech: {
+            first: 'HTML',
+            second: 'CSS',
+            third: 'JavaScript',
+            fourth: 'Python',
+        },
+    },
+};
+
+const { work, framework } = company.web;
+const { food } = company.ceo;
+const { second, third, fourth } = company.web.tech;
+
+console.log(work);
+console.log(framework);
+console.log(food);
+console.log(second);
+console.log(third);
+console.log(fourth);
