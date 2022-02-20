@@ -235,3 +235,8 @@ console.log(filteredProducts);
 
 const pinkItem = products.find((product) => product.color === 'pink');
 console.log(pinkItem);
+
+const nums = [1, 2, 3, 4, 5];
+const output = nums.filter((n) => n % 2);
+
+console.log(output);
