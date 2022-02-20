@@ -223,6 +223,7 @@ const products = [
     { name: 'mobile phone', price: 15000, color: 'black' },
     { name: 'smart watch', price: 3000, color: 'black' },
     { name: 'sticky note', price: 30, color: 'pink' },
+    { name: 'watch', price: 5000, color: 'black' },
 ];
 
 const productsName = products.map((product) => product.name);
@@ -240,3 +241,44 @@ const nums = [1, 2, 3, 4, 5];
 const output = nums.filter((n) => n % 2);
 
 console.log(output);
+
+// ***********************
+// web dev course practice and hw
+let change = 4;
+change += 2;
+console.log(change);
+
+const constant = 'ola baba';
+console.log(constant);
+
+const futurePlan = `${change} ${constant}`;
+console.log(futurePlan);
+
+const divideByFive = (num) => num / 5;
+console.log(divideByFive(100));
+
+const odvutFunction = (param1, param2) => (param1 + 2) * (param2 + 2);
+console.log(odvutFunction(2, 3));
+
+const multiply = (x, y, z) => x * y * z;
+console.log(multiply(2, 3, 4));
+
+const superFunction = (param1, param2) => {
+    const sum1 = param1 + 2;
+    const sum2 = param2 + 2;
+    return sum1 + sum2;
+};
+
+console.log(superFunction(2, 3));
+const testNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+const multipliedByFive = testNums.map((x) => x * 5);
+console.log(multipliedByFive);
+
+const oddNums = testNums.filter((x) => x % 2);
+console.log(oddNums);
+
+const fiveThousandFind = products.find((product) => product.price === 5000);
+console.log(fiveThousandFind);
+
+
