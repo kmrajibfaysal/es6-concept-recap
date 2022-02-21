@@ -280,5 +280,3 @@ console.log(oddNums);
 
 const fiveThousandFind = products.find((product) => product.price === 5000);
 console.log(fiveThousandFind);
-
-
