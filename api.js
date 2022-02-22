@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable no-unused-vars */
 function loadUsers() {
     fetch('http://jsonplaceholder.typicode.com/users')
@@ -36,6 +37,20 @@ function displayUsers(users) {
 // .then(response => response ____?___ )
 // .then(json => console.log(json))
 
-const info = { data: [{ language: 'Javascript', library: 'React' }] };
+// const info = { data: [{ language: 'Javascript', library: 'React' }] };
 
-console.log(info.data[0].library);
+// console.log(info.data[0].library);
+
+// const loadQuotes = () => {
+//     setInterval(() => {
+//         fetch('https://api.kanye.rest/')
+//             .then((response) => response.json())
+//             .then((json) => randomQuotes(json));
+//     }, 5000);
+// };
+// const randomQuotes = (quotes) => {
+//     setInterval(() => {
+//         document.getElementById('randomQ').innerText = quotes.quote;
+//         console.log(quotes.quote);
+//     }, 6000);
+// };
