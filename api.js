@@ -1,26 +1,5 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-unused-vars */
-function loadUsers() {
-    fetch('http://jsonplaceholder.typicode.com/users')
-        .then((res) => res.json())
-        .then((users) => displayUsers(users));
-}
-
-function loadPosts() {
-    fetch('http://jsonplaceholder.typicode.com/posts')
-        .then((res) => res.json())
-        .then((post) => console.log(post));
-}
-
-function displayUsers(users) {
-    const ul = document.querySelector('#users');
-    // eslint-disable-next-line no-restricted-syntax
-    for (const user of users) {
-        const li = document.createElement('li');
-        li.innerText = `Name: ${user.name}, Email: ${user.email}`;
-        ul.appendChild(li);
-    }
-}
 // const stuInfo = JSON.stringify({ name: 'James', roll: 3 });
 // console.log(stuInfo.name);
 
@@ -54,3 +33,43 @@ function displayUsers(users) {
 //         console.log(quotes.quote);
 //     }, 6000);
 // };
+
+// *! hi there
+// *? hi there
+// ** hi there
+// TODO: hi there
+
+function loadUsers() {
+    fetch('http://jsonplaceholder.typicode.com/users')
+        .then((res) => res.json())
+        .then((users) => displayUsers(users));
+}
+
+function loadPosts() {
+    fetch('http://jsonplaceholder.typicode.com/posts')
+        .then((res) => res.json())
+        .then((post) => console.log(post));
+}
+
+function displayUsers(users) {
+    const ul = document.querySelector('#users');
+    // eslint-disable-next-line no-restricted-syntax
+    for (const user of users) {
+        const li = document.createElement('li');
+        li.innerText = `Name: ${user.name}, Email: ${user.email}`;
+        ul.appendChild(li);
+    }
+}
+
+const data = { result: [{ userName: { title: 'Mr.', name: 'sakib khan' } }] };
+console.log(data.result[0].userName.name);
+
+const info = { name: '', phoneNumber: null };
+console.log(JSON.stringify(info));
+
+const array = { hobbies: ['dancing', 'singing', 'acting'] };
+console.log(JSON.stringify(array));
+
+// console.log(JSON.stringify({ eventName: 'birthday', date: Date().tomorrow() }));
+console.log(JSON.stringify({ eventName: 'birthday', date: Date() }));
+console.log(JSON.stringify({ eventName: 'birthday', date: new Date() }));
