@@ -9,9 +9,13 @@
 // console.log(7);
 // console.log(8);
 
-let count = 0;
-for (let i = 0; i < 10; i++) {
-    if (count < 8) {
-        console.log(count++);
-    }
+// let count = 0;
+// for (let i = 0; i < 10; i++) {
+//     if (count < 8) {
+//         console.log(count++);
+//     }
+// }
+
+for (let i = 0; i < 1000000; i++) {
+    console.log(i);
 }
